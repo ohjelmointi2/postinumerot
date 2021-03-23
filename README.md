@@ -33,7 +33,9 @@ Tarkemman tehtävänannon sekä vinkit logiikan toteuttamiseksi löydät Ohjelmo
 
 Lue käyttäjän syöttämä postitoimipaikan nimi ja tulosta kaikki postinumerot, jotka kuuluvat kyseiseen postitoimipaikkaan.
 
-Tulosteessa postinumeroiden tulee olla kasvavassa järjestyksessä pilkuilla eroteltuna, joten kerää postinumerot ensin listalle, jonka järjestät ennen tulostamista.
+Toisin kuin edellisessä tehtävässä, tässä ongelmaa ei voida ratkaista tarkistamalla arvoa suoraan yksittäisen avaimen avulla. Sen sijaan sinun tulee käydä koko Map-tietorakenne läpi ja etsiä kaikki postinumerot, eli avaimet, joiden arvo vastaa käyttäjän antamaa merkkijonoa. Löydät vinkkejä Map-tietorakenteen läpikäyntiin esimerkiksi artikkelista ["How to iterate any Map in Java"](https://www.geeksforgeeks.org/iterate-map-java/).
+
+Tulosteessa postinumeroiden tulee olla kasvavassa järjestyksessä pilkuilla eroteltuna, joten kerää postinumerot ensin listalle, jonka järjestät ennen tulostamista. Järjestäminen voidaan tehdä esimerkiksi [Collections.sort](https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#sort-java.util.List-)-metodilla.
 
 Mikäli annetulle postitoimipaikalle ei löydy lainkaan postinumeroita, tulosta "Postinumeroita ei löytynyt."
 
