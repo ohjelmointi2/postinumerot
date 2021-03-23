@@ -4,7 +4,7 @@ Tämä Git-repositorio sisältää Eclipse-projektin, jota voit käyttää pohja
 
 ## Map-tietorakenne
 
-Molemmissa tehtävissä tarvittava Map-tietorakenne luodaan valmiin `luePostinumerot()`-metodin avulla. Kyseinen metodi muodostaa Postin postinumeroaineistosta Map-tietorakenteen, jossa postinumerot toimivat avaimina ja postitoimipaikkojen nimet toimivat arvoina:
+Molemmissa tehtävissä tarvittava Map-tietorakenne luodaan valmiin `luePostinumerot()`-metodin avulla. Kyseinen metodi muodostaa [Postin postinumeroaineistosta](postinumerot.csv) Map-tietorakenteen, jossa postinumerot toimivat avaimina ja postitoimipaikkojen nimet toimivat arvoina:
 
 ```
 {93830=Rukatunturi, 68874=Smartpost, 66210=Molpe, 87150=Kajaani, 92500=Rantsila ... }
@@ -16,7 +16,7 @@ Sekä avainten että arvojen tietotyyppi on `String`, eli metodin paluuarvo void
 Map<String, String> postinumeroMap = luePostinumerot();
 ```
 
-## Postitoimipaikka.java
+## [Postitoimipaikka.java](src/Postitoimipaikka.java)
 
 Lue käyttäjän syöttämä postinumero ja tulosta sitä vastaava postitoimipaikan nimi. Mikäli postinumeroa ei löydy aineistosta, tulosta teksti "Postinumeroa ei löytynyt."
 
@@ -27,7 +27,9 @@ Syötä postinumero: 00100
 Helsinki
 ```
 
-## Postinumerot.java
+Tarkemman tehtävänannon sekä vinkit logiikan toteuttamiseksi löydät Ohjelmointi 2 -kurssin Viopesta.
+
+## [Postinumerot.java](src/Postinumerot.java)
 
 Lue käyttäjän syöttämä postitoimipaikan nimi ja tulosta kaikki postinumerot, jotka kuuluvat kyseiseen postitoimipaikkaan.
 
@@ -42,7 +44,7 @@ Syötä postitoimipaikka: Porvoo
 Postinumerot: 06100, 06101, 06150, 06151, 06200, 06400, 06401, 06450, 06500
 ```
 
-Tarkemmat tehtävänannot löydät Ohjelmointi 2 -kurssin Viopesta.
+Tarkemman tehtävänannon sekä vinkit logiikan toteuttamiseksi löydät Ohjelmointi 2 -kurssin Viopesta.
 
 # Postinumeroaineiston tekijänoikeudet
 
