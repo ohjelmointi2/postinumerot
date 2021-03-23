@@ -2,6 +2,8 @@
 
 Tämä Git-repositorio sisältää Eclipse-projektin, jota voit käyttää pohjana Map-harjoitusten tekemisessä. [Kloonaa tämä Git-repositorio itsellesi Eclipseen](https://www.google.com/search?q=git+clone+java+project+into+eclipse).
 
+Kloonaamisen jälkeen varmista koodin toimivuus suorittamalla projektiin kuuluvat testit. Voit suorittaa testit Eclipsessä klikkaamalla projektia hiiren kakkospainikkeella ja valitsemalla "Run As"-kohdasta vaihtoehdon "JUnit Test". Syvennymme yksikkötestaamiseen tarkemmin kurssin seuraavilla viikoilla.
+
 ## Map-tietorakenne
 
 Molemmissa tehtävissä tarvittava Map-tietorakenne luodaan valmiin `luePostinumerot()`-metodin avulla. Kyseinen metodi muodostaa [Postin postinumeroaineistosta](postinumerot.csv) Map-tietorakenteen, jossa postinumerot toimivat avaimina ja postitoimipaikkojen nimet toimivat arvoina:
