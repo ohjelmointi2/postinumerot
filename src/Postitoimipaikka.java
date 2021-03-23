@@ -30,7 +30,7 @@ public class Postitoimipaikka {
      * 
      * @return postinumerot ja -toimipaikat Map-tietorakenteena
      */
-    private static Map<String, String> luePostinumerot() {
+    public static Map<String, String> luePostinumerot() {
         Map<String, String> postinumerot = new HashMap<String, String>();
 
         try {
