@@ -1,6 +1,12 @@
 # Map-harjoitustehtävät: postitoimipaikka ja postinumerot
 
-Tämä Git-repositorio sisältää Eclipse-projektin, jota voit käyttää pohjana Map-harjoitusten tekemisessä. [Kloonaa tämä Git-repositorio itsellesi Eclipseen](https://www.google.com/search?q=git+clone+java+project+into+eclipse).
+Tämä Git-repositorio sisältää Eclipse-projektin, jota voit käyttää pohjana Map-harjoitusten tekemisessä. Kloonaa tämä Git-repositorio itsellesi Eclipseen valitsemalla File-valikosta:
+
+```
+File → Import → Git → Projects From Git → Clone URI
+```
+
+Sytä Eclipsen Source Git Repository -dialogin URI-kenttään tämän Git-projektin osoite: `https://github.com/ohjelmointi2/postinumerot.git`. Tarvittaessa löydät tarkempia ohjeita projektin kloonaamiseksi [Googlella](https://www.google.com/search?q=git+clone+java+project+into+eclipse).
 
 Kloonaamisen jälkeen varmista koodin toimivuus suorittamalla projektiin kuuluvat testit. Voit suorittaa testit Eclipsessä klikkaamalla projektia hiiren kakkospainikkeella ja valitsemalla "Run As"-kohdasta vaihtoehdon "JUnit Test". Syvennymme yksikkötestaamiseen tarkemmin kurssin seuraavilla viikoilla.
 
