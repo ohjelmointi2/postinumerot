@@ -4,7 +4,7 @@ import java.util.Map;
 
 import org.junit.jupiter.api.Test;
 
-class PostinumerotTest {
+public class PostinumerotTest {
 
     @Test
     public void testPorvoonPostinumerotLoytyvatMapista() {
