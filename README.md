@@ -28,7 +28,7 @@ Map<String, String> postinumeroMap = luePostinumerot();
 
 Lue käyttäjän syöttämä postinumero ja tulosta sitä vastaava postitoimipaikan nimi. Mikäli postinumeroa ei löydy aineistosta, tulosta teksti "Postinumeroa ei löytynyt."
 
-Esimerkisuoritus:
+Esimerkkisuoritus:
 
 ```
 Syötä postinumero: 00100
@@ -61,3 +61,7 @@ Tarkemman tehtävänannon sekä vinkit logiikan toteuttamiseksi löydät Ohjelmo
 Tässä projektissa hyödynnettävä postinumeroaineisto [postinumerot.csv](postinumerot.csv) on muodostettu [https://github.com/theikkila/postinumerot](https://github.com/theikkila/postinumerot)-projektin [postcode_map_light.json](https://github.com/theikkila/postinumerot/blob/master/postcode_map_light.json)-tiedostosta 23.3.2021.
 
 Datan tekijänoikeudet kuuluvat Postille ja niitä käytetään [Postin käyttöehtojen mukaisesti](https://www.posti.fi/fi/asiakastuki/postinumerotiedostot). Mikäli teet kopioita tästä aineistosta, huolehdi käyttöehtojen noudattamisesta.
+
+# Tehtävän tekijänoikeudet
+
+Tämän tehtävän on kehittänyt Teemu Havulinna ja se on lisensoitu [Creative Commons BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/) -lisenssillä.
