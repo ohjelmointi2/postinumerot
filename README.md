@@ -10,6 +10,9 @@ Sytä Eclipsen Source Git Repository -dialogin URI-kenttään tämän Git-projek
 
 Kloonaamisen jälkeen varmista koodin toimivuus suorittamalla projektiin kuuluvat testit. Voit suorittaa testit Eclipsessä klikkaamalla projektia hiiren kakkospainikkeella ja valitsemalla "Run As"-kohdasta vaihtoehdon "JUnit Test". Syvennymme yksikkötestaamiseen tarkemmin kurssin seuraavilla viikoilla.
 
+❌ Mikäli projekti on Eclipsessä täynnä virheitä, kuten "Test cannot be resolved to a type" ja "The import org.junit cannot be resolved", Eclipse-versiosi on vanhentunut. Asenna uusi Eclipse-versio kurssin ohjeiden mukaisesti.
+
+
 ## Map-tietorakenne
 
 Molemmissa tehtävissä tarvittava Map-tietorakenne luodaan valmiin `luePostinumerot()`-metodin avulla. Kyseinen metodi muodostaa [Postin postinumeroaineistosta](postinumerot.csv) Map-tietorakenteen, jossa postinumerot toimivat avaimina ja postitoimipaikkojen nimet toimivat arvoina:
