@@ -11,7 +11,7 @@ public class PostinumerotTest {
 
     @Test
     public void mapinAvaimetOvatPostinumeroita() {
-        Map<String, String> postinumeroMap = Postitoimipaikka.luePostinumerot();
+        Map<String, String> postinumeroMap = Postinumerot.luePostinumerot();
 
         Set<String> avaimet = postinumeroMap.keySet();
 
@@ -21,7 +21,7 @@ public class PostinumerotTest {
 
     @Test
     public void mapinArvotOvatToimipaikkoja() {
-        Map<String, String> postinumeroMap = Postitoimipaikka.luePostinumerot();
+        Map<String, String> postinumeroMap = Postinumerot.luePostinumerot();
 
         Collection<String> arvot = postinumeroMap.values();
 
@@ -32,7 +32,7 @@ public class PostinumerotTest {
 
     @Test
     public void mapinArvotVoidaanHakeaAvaintenAvulla() {
-        Map<String, String> postinumeroMap = Postitoimipaikka.luePostinumerot();
+        Map<String, String> postinumeroMap = Postinumerot.luePostinumerot();
 
         String toimipaikka = postinumeroMap.get("00100");
 
