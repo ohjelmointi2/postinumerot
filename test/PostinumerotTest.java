@@ -1,9 +1,8 @@
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import java.util.Collection;
 import java.util.Map;
-import java.util.Set;
 
 import org.junit.jupiter.api.Test;
 
@@ -13,21 +12,19 @@ public class PostinumerotTest {
     public void mapinAvaimetOvatPostinumeroita() {
         Map<String, String> postinumeroMap = Postinumerot.luePostinumerot();
 
-        Set<String> avaimet = postinumeroMap.keySet();
+        assertTrue(postinumeroMap.containsKey("00100"));
+        assertTrue(postinumeroMap.containsKey("00730"));
 
-        assertTrue(avaimet.contains("00100"));
-        assertTrue(avaimet.contains("00730"));
+        assertFalse(postinumeroMap.containsKey("00000"));
     }
 
     @Test
     public void mapinArvotOvatToimipaikkoja() {
         Map<String, String> postinumeroMap = Postinumerot.luePostinumerot();
 
-        Collection<String> arvot = postinumeroMap.values();
-
-        assertTrue(arvot.contains("Helsinki"));
-        assertTrue(arvot.contains("Espoo"));
-        assertTrue(arvot.contains("Vantaa"));
+        assertTrue(postinumeroMap.containsValue("Helsinki"));
+        assertTrue(postinumeroMap.containsValue("Espoo"));
+        assertTrue(postinumeroMap.containsValue("Vantaa"));
     }
 
     @Test
@@ -37,6 +34,15 @@ public class PostinumerotTest {
         String toimipaikka = postinumeroMap.get("00100");
 
         assertEquals("Helsinki", toimipaikka);
+    }
+
+    @Test
+    public void skandimerkitLuetaanTiedostostaOikein() {
+        Map<String, String> postinumeroMap = Postinumerot.luePostinumerot();
+
+        String polja = postinumeroMap.get("71820");
+
+        assertEquals("Pöljä", polja);
     }
 
     @Test
