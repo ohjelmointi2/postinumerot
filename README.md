@@ -8,7 +8,12 @@ File → Import → Git → Projects From Git → Clone URI
 
 Sytä Eclipsen Source Git Repository -dialogin URI-kenttään tämän Git-projektin osoite: `https://github.com/ohjelmointi2/postinumerot.git`. Tarvittaessa löydät tarkempia ohjeita projektin kloonaamiseksi [Googlella](https://www.google.com/search?q=git+clone+java+project+into+eclipse).
 
-Kloonaamisen jälkeen varmista koodin toimivuus suorittamalla projektiin kuuluvat testit. Voit suorittaa testit Eclipsessä klikkaamalla projektia hiiren kakkospainikkeella ja valitsemalla "Run As"-kohdasta vaihtoehdon "JUnit Test". Syvennymme yksikkötestaamiseen tarkemmin kurssin seuraavilla viikoilla.
+Kloonaamisen jälkeen varmista koodin toimivuus suorittamalla projektiin kuuluvat testit. Voit suorittaa testit Eclipsessä klikkaamalla projektia hiiren kakkospainikkeella ja valitsemalla "Run As"-kohdasta vaihtoehdon "JUnit Test". Eclipsen pitäisi suorittaa seuraavat kaksi testiluokkaa onnistuneesti:
+
+* [PostinumerotTest.java](./test/PostinumerotTest.java)
+* [PostitoimipaikkaTest.java](./test/PostitoimipaikkaTest.java)
+
+Syvennymme yksikkötestaamiseen tarkemmin kurssin seuraavilla viikoilla. 
 
 ❌ Mikäli projekti on Eclipsessä täynnä virheitä, kuten "Test cannot be resolved to a type" ja "The import org.junit cannot be resolved", Eclipse-versiosi on vanhentunut. Asenna uusi Eclipse-versio kurssin ohjeiden mukaisesti.
 
